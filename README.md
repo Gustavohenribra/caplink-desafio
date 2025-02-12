@@ -4,6 +4,11 @@
 
 Estamos utilizando um servidor customizado (server.ts) para facilitar a integração do websocket em um unico server
 
+### Para instalar as dependencias rode:
+```bash
+npm install
+```
+
 ### Para iniciar o banco rode o script:
 ```bash
 npm run db:migrate
