@@ -7,7 +7,8 @@
     },
     "include": [
       "server.ts",
-      "socketServer.ts"
+      "socketServer.ts",
+      "lib/**/*"
     ]
   }
   

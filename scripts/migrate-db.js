@@ -7,8 +7,13 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const dbPath = path.resolve(__dirname, '../database/database.sqlite');
-const initSqlPath = path.resolve(__dirname, '../database/init.sql');
+const dbPath = process.env.DB_PATH
+  ? path.resolve(__dirname, process.env.DB_PATH)
+  : path.resolve(__dirname, '../database/database.sqlite');
+
+const initSqlPath = process.env.INIT_SQL_PATH
+  ? path.resolve(__dirname, process.env.INIT_SQL_PATH)
+  : path.resolve(__dirname, '../database/init.sql');
 
 function initializeDatabase() {
     const db = new sqlite3.Database(dbPath, (err) => {
