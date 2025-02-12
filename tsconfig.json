@@ -7,6 +7,8 @@
       "esnext"
     ],
     "allowJs": true,
+    "outDir": "build",
+    "rootDir": ".",
     "skipLibCheck": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,

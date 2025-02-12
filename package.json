@@ -5,8 +5,8 @@
   "private": true,
   "scripts": {
     "dev": "tsx server.js",
-    "build": "next build",
-    "start": "next start",
+    "build": "next build && tsc -p tsconfig.server.json",
+    "start": "node build/server.js",
     "lint": "next lint",
     "db:migrate": "node scripts/migrate-db.js",
     "test": "jest"

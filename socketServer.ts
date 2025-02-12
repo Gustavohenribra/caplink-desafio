@@ -1,6 +1,7 @@
 import { Server as HTTPServer } from 'http';
 import { Server as SocketIOServer } from 'socket.io';
-import { calculateECGBaseline } from 'lib/ecgCalculator';
+import { calculateECGBaseline } from './lib/ecgCalculator.js';
+
 
 interface ClientState {
   deviationBuffer: boolean[];

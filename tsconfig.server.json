@@ -1,0 +1,13 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+      "noEmit": false,
+      "outDir": "build",
+      "target": "es2019"
+    },
+    "include": [
+      "server.ts",
+      "socketServer.ts"
+    ]
+  }
+  
