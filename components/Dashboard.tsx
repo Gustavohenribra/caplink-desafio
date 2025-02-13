@@ -158,7 +158,7 @@ const Dashboard: React.FC = () => {
   };
 
   return (
-<div className="p-5 grid gap-5 text-black">
+<div className="p-5 grid gap-5 text-black pb-20">
       <h2 className="text-2xl font-bold mb-4">Dashboard</h2>
 
       <div className="flex flex-col sm:flex-row items-center sm:justify-center mb-6 space-y-2 sm:space-y-0 sm:space-x-3">
@@ -199,7 +199,7 @@ const Dashboard: React.FC = () => {
         <p>Variância: {stats.variance.toFixed(3)}</p>
       </section>
 
-      <section className="bg-gray-100 p-4 rounded shadow">
+      <section className="bg-gray-100 p-4 rounded shadow pb-10">
         <h3 className="text-xl font-semibold mb-2">Histórico de Alertas</h3>
         <AnimatePresence>
           {alerts.map((alert, index) => (
