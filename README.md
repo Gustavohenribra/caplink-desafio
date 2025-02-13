@@ -1,6 +1,9 @@
 ## Projeto sendo criado em Next 15, TypeScript, SQLite, WebSockets, completamente responsivo.
 
 ### Visão Geral
+![Arquitetura](https://github.com/user-attachments/assets/d57ac3a3-a415-4a91-b53b-4a9d8e0b6047)
+
+https://excalidraw.com/#json=hT00Iq432bnat7V9tuMjJ,4DQMbbBo5dHW1UxGoFtt0Q
 
 Estamos utilizando um servidor customizado (server.ts) para facilitar a integração do websocket em um unico server
 
