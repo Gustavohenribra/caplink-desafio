@@ -38,7 +38,7 @@ const PatientCard: React.FC<PatientCardProps> = ({ patient, onDelete }) => {
   const socketRef = useRef<Socket | null>(null);
 
   useEffect(() => {
-    const socket = io('http://localhost:3000');
+    const socket = io();
     socketRef.current = socket;
 
     const interval = setInterval(() => {
